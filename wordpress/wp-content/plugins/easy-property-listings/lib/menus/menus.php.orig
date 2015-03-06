@@ -17,8 +17,8 @@ if( !is_admin() ) {
 add_action('admin_menu', 'epl_admin_menu');
 
 function epl_admin_menu() {
-	$menu_title	= __('Property Listings', 'epl');
-	$page_title	= __('Property Listings', 'epl');
+	$menu_title	= __('Easy Property Listings', 'epl');
+	$page_title	= __('Easy Property Listings', 'epl');
 	$capability	= 'edit_published_posts';
 	$main_menu_slug = $menu_slug	= 'epl-general';
 	$function	= 'epl_menu_general';
@@ -28,14 +28,14 @@ function epl_admin_menu() {
 	
 	$page_title	= __('Help', 'epl');
 	$menu_title	= __('Help', 'epl');
-//	add_submenu_page($menu_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
+	add_submenu_page($menu_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
 
 	$page_title	= __('Settings', 'epl');
 	$menu_title 	= __('Settings', 'epl');
 	$capability	= 'manage_options';
 	$function	= 'epl_menu_settings';
 	$menu_slug	= 'epl-settings';
-//	add_submenu_page($main_menu_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
+	add_submenu_page($main_menu_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
 	
 	// Enable Menu if extension requires extension options
 	$capability	= 'manage_options';
@@ -71,15 +71,14 @@ function epl_admin_menu() {
 	$capability	= 'edit_published_posts';
 	$menu_slug	= 'epl-addons';
 	$function	= 'epl_menu_addons';
-//	add_submenu_page($main_menu_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
+	add_submenu_page($main_menu_slug, $page_title, $menu_title, $capability, $menu_slug, $function);
 }
 
 function epl_menu_general() {
 	if(!current_user_can('edit_published_posts')) {
 		wp_die( __('You do not have sufficient permissions to access this page.', 'epl') );
 	}
-	//require_once 'menu-help.php';
-	require_once 'menu-general.php';
+	require_once 'menu-help.php';
 }
 
 function epl_menu_settings() {
