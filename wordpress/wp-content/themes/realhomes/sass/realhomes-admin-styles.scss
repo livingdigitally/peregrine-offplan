@@ -1,0 +1,74 @@
+#payments-table{
+  border: 1px solid #dedede;
+  background: #fff;
+  margin: 25px 0;
+  border-collapse: collapse;
+  th,td{
+    border: 1px solid #dedede;
+    text-align: left;
+  }
+  a{
+    text-decoration: none;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .pagination{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    li{
+      display: inline;
+    }
+    li.active{
+      a{
+        font-weight: bold;
+      }
+    }
+    a{
+      display: inline-block;
+      padding: 2px 3px;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+/* Meta Box Fixes for RTL */
+.rwmb-field.rwmb-radio-wrapper .rwmb-input label {
+  display: block;
+  margin: 5px 0;
+}
+.rwmb-input .rwmb-button{
+  float: none;
+}
+#additonal_details{
+  .rwmb-meta-box{
+    overflow: hidden;
+    .rwmb-field.rwmb-text-wrapper{
+      float: left;
+      width: 29%;
+      &:last-child{
+        width: 70%;
+      }
+      .rwmb-label{
+        display: block;
+        margin-bottom: 10px;
+      }
+      .rwmb-button.remove-clone{
+        position: static;
+        top: auto;
+        right: auto;
+        margin-left: 5px;
+      }
+      .rwmb-input{
+        width: 100%;
+      }
+      input.rwmb-text{
+        width: 75%;
+      }
+    }
+  }
+}

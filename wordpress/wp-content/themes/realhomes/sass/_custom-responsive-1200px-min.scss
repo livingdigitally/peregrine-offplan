@@ -1,0 +1,761 @@
+
+//
+// Responsive: Large desktop and up
+//---------------------------------------------------
+
+@media (min-width: 1200px) {
+
+//
+//  Social Nav
+//--------------------------------------------------
+#header .social_networks li a{
+  width: 49px;
+}
+#header .user-nav a{
+  padding: 0 10px 0 7px;
+}
+
+//
+//  Logo
+//--------------------------------------------------
+#logo{
+  max-width: 100%;
+}
+
+
+//
+//  Main Nav
+//--------------------------------------------------
+  $main_menu_a_padding: 14px 17px ;
+  $main_menu_a_padding_2: 10px 17px 12px;
+  $main_menu_ul_width: 234px;
+
+  .main-menu{
+    ul {
+      li {
+        a {
+          padding: $main_menu_a_padding;
+          font-size: 15px;
+        }
+        ul{
+          width: $main_menu_ul_width;
+          top: $main_menu_ul_top;
+          li{
+            a{
+              padding: $main_menu_a_padding_2;
+              font-size: 14px;
+            }
+            ul{
+              left: $main_menu_ul_width;
+            }
+          }
+        }
+      }
+    }
+  }
+
+//
+//  Contact Number
+//--------------------------------------------------
+  .contact-number{
+    font-size: 21px;
+    line-height: 46px;
+  }
+
+
+//
+// Slide Description
+//--------------------------------------------------
+  .desc-wrap{
+      width: 1170px;
+  }
+  .slide-description{
+      top: 179px;
+      left:0 ;
+  }
+
+
+//
+// Advance Search
+//--------------------------------------------------
+  .advance-search .as-form-wrap {
+    padding: 25px 31px 0;
+  }
+  .small{
+    input[type="text"]{
+      width: 134px;
+    }
+    .selectwrap input{
+      width: 110px;
+    }
+  }
+  .large{
+    input[type="text"]{
+      width: 247px;
+    }
+    .selectwrap input{
+      width: 223px;
+    }
+  }
+
+  // Slider Loader
+  // -----------------------------------------------------------------------
+  #home-flexslider{
+    .flexslider.loading{
+      min-height: 400px;
+    }
+  }
+
+  //
+// Property Item
+//--------------------------------------------------
+  .narrative{
+    padding: 0 45px;
+  }
+
+  .property-items{
+    .span6{
+      width: 540px;
+      margin-left: 29.3px;
+    }
+    .narrative{
+      padding: 42px 72px;
+    }
+  }
+
+  .property-item{
+    padding: 15px 19px 0;
+    figure{
+        width: 244px;
+    }
+    .detail{
+      width: 240px;
+      padding-left:  16px;
+    }
+    .price{
+      font-size: 18px;
+      padding: 8px 10px 10px 13px;
+      margin-left:  -16px;
+    }
+    p{
+      font-size: 13px;
+      line-height: 23px;
+    }
+    .conten{
+      font-size: 13px;
+      line-height: 23px;
+    }
+
+    .property-meta{
+      margin: 0 -19px 0;
+      padding: 0 19px;
+      span{
+        font-size: 13px;
+        padding-right: 12px;
+        margin-right: 12px;
+      }
+    }
+
+  }
+
+//
+// Carousel For Featured Properties
+//--------------------------------------------------
+  .es-carousel-wrapper {
+    padding: 0 49px;
+  }
+
+  $list_item_width:  245px;
+  $list_item_margin: 30px;
+
+  .es-carousel-wrapper {
+    ul{
+      li{
+        width: $list_item_width !important;
+        margin-right: $list_item_margin !important;
+      }
+    }
+  }
+
+
+
+//
+// Brand Partners carousel
+//--------------------------------------------------
+
+// 1168 - 100 = 1068 / 6  =  178
+  $list_item_width: 178px;
+
+  .brands-carousel {
+    .jcarousel-container-horizontal{
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    ul.brands-carousel-list{
+      li{
+        width: $list_item_width;
+      }
+    }
+  }
+
+
+
+//
+// widgets
+//--------------------------------------------------
+  #footer{
+    > .row{
+      > .span3{
+        width: 270px;
+      }
+    }
+  }
+
+
+  .widget{
+    &.quick-links{
+      ul{
+        li{
+          float: left;
+          width: 46%;
+        }
+      }
+    }
+  }
+
+
+  .sidebar {
+    .widget{
+      .title{
+        padding-left: 19px ;
+      }
+    }
+  }
+
+
+//
+// Search Widget
+//------------------------------------------------------
+  .widget{
+    #searchform{
+      width: 240px;
+    }
+    #s{
+      width: 202px;
+    }
+  }
+
+
+
+//
+// Social Network Widget
+//------------------------------------------------------
+  .widget.social_network{
+    .social_networks {
+      li {
+        a {
+          width:49px;
+        }
+      }
+    }
+  }
+
+
+
+
+//
+// Advance Search Widget
+//------------------------------------------------------
+  .widget.advance-search{
+    .title{
+       padding:0 0 0 20px ;
+      .icon-search {
+        padding-left: 20px ;
+        padding-right: 20px;
+      }
+    }
+    .small{
+      input[type="text"]{
+        width: 98px;
+      }
+      .selectwrap input{
+        width: 74px;
+      }
+    }
+    .large{
+      input[type="text"]{
+        width: 224px;
+      }
+      .selectwrap input{
+        width: 200px;
+      }
+    }
+    .real-btn {
+      padding: 8px 36px;
+    }
+  }
+
+
+//
+// Calculator Widget
+// ------------------------------------------------------
+  .widget.calculator{
+    .title{
+      background-position: 231px 9px ;
+      padding-left: 19px;
+    }
+    input[type="text"] {
+      width: 221px;
+      padding-left: 10px;
+      margin-bottom: 18px;
+    }
+    .selectwrap input {
+      /*width: 197px;*/
+    }
+    .mini{
+      input {
+        width: 66px;
+      }
+    }
+    #payment{
+      width: 88px;
+    }
+    #extra{
+      width: 196px;
+    }
+    .first{
+      margin-right: 19px;
+    }
+  }
+
+  .widget.advance-search,
+  .widget.calculator{
+  .selectbox-wrapper{
+    ul {
+      li{
+        padding: 6px 11px;
+      }
+    }
+  }
+}
+
+
+//
+// Featured Properties Widget
+//------------------------------------------------------
+  ul.featured-properties{
+      padding: 0 15px;
+      li{
+        background: none;
+        border: none;
+        padding: 0 0 40px 0;
+        &:last-child{
+          padding-bottom: 25px;
+        }
+      }
+  }
+
+
+
+//
+// Page Head
+//--------------------------------------------------
+  .page-head {
+    h2{
+      span{
+        padding: 7px 58px 7px 28px;
+      }
+    }
+    p{
+      padding: 17px 30px 17px 28px;
+    }
+  }
+
+
+//
+// Agent Listing Page
+//--------------------------------------------------
+  .list-container{
+    padding: 28px 25px;
+
+  }
+
+
+//
+// Agent Listing Detail Page
+//------------------------------------------------------
+  .listing-layout{
+    .about-agent{
+      .detail{
+         width: 602px;
+      }
+    }
+    .property-item{
+      .price {
+        margin-right: -20px;
+      }
+      .detail {
+        width: 516px;
+      }
+    }
+  }
+
+
+
+/*------------------------------------------------------*/
+/* Property Listing View
+/*------------------------------------------------------*/
+  .view-type {
+    position: absolute;
+    right: -1px ;
+    top: -36px;
+    border: 1px solid $border_color_two;
+  }
+
+
+//
+// Property Grid View Page
+//--------------------------------------------------------
+  .property-grid{
+    .list-container{
+      margin-left: -40px;
+    }
+    .property-item{
+      margin-left: 40px;
+      width: 246px;
+    }
+  }
+
+
+//
+// Comments
+//------------------------------------------------------
+  #comments .commentlist {
+    padding: 2px 46px 5px 14px;
+  }
+
+  .comment-detail-wrap {
+    width: 71.5%;
+  }
+
+  #comments .commentlist .children {
+    padding: 0 0 0 61px;
+  }
+
+
+  #comments .commentlist .children .comment-detail-wrap {
+    width: 85%;
+  }
+
+  #comments .commentlist .children .depth-2 .comment-detail-wrap{
+    width: 69%;
+  }
+  #comments .commentlist .children .depth-3 .comment-detail-wrap{
+    width: 66%;
+  }
+  #comments .commentlist .children .depth-4 .comment-detail-wrap{
+    width: 62%;
+  }
+  #comments .commentlist .children .depth-5 .comment-detail-wrap{
+    width: 58%;
+  }
+
+
+//
+// About Us Page
+//------------------------------------------------------
+  .services-list {
+    margin: 0 0 0 -70px ;
+    li{
+      width: 374px;
+      margin: 0 0 50px 70px ;
+    }
+  }
+
+  .how-we-work{
+    ol{
+      li{
+        width: 350px;
+      }
+    }
+  }
+
+
+//
+// Detail Page
+//------------------------------------------------------
+  #property-detail-flexslider {
+    height: 385px;
+    .flex-viewport{
+      width: 768px;
+      height: 385px;
+    }
+    .flex-control-thumbs{
+      li{
+        margin-bottom: 7px;
+        height: 60px;
+      }
+    }
+    .jcarousel-container-vertical{
+      width: 82px;
+      padding: 9px;
+
+    }
+    .jcarousel-clip-vertical{
+      height: 335px;
+    }
+    .jcarousel-next,
+    .jcarousel-prev{
+      margin: 5.2px 0 0;
+      width: 40px;
+    }
+}
+
+#overview{
+
+  .left-box{
+    width: 480px;
+  }
+  .contacts-list{
+    width: 240px;
+  }
+  .contact-form{
+    width: 320px;
+    textarea,
+    input[type="text"]{
+      width: 293px;
+    }
+  }
+}
+
+
+
+
+//
+// Gallery Template
+//------------------------------------------------------
+ #filter-by {
+    margin: 0;
+    position: absolute;
+    right: -1px ;
+    top: -36px;
+      a {
+        float: left;
+        border: none ;
+        border-right: 1px solid $border_color_two;
+        margin:0;
+        &:last-child {
+          border-right: none;
+       }
+     }
+  }
+
+
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+  //
+  // Gallery Template
+  //------------------------------------------------------
+    #filter-by {
+      a {
+        float: none;
+        margin-left: 0px;
+      }
+    }
+
+  }
+
+
+
+  $gi_margin : 40px;
+  $c_padding : 62px;
+  $c_width   : 1170px;
+
+  @function giw($items)
+  {
+    $wid   : $c_width - $c_padding ;
+    $ism   : $gi_margin * ( $items - 1 );
+    $isw   : ( $wid - $ism )  / $items;
+    @return  $isw;
+  }
+
+  .gallery-2-columns,
+  .gallery-3-columns,
+  .gallery-4-columns{ margin-left: -$gi_margin; }
+  .gallery-2-columns .gallery-item,
+  .gallery-3-columns .gallery-item,
+  .gallery-4-columns .gallery-item{ margin-left: $gi_margin;}
+
+  .gallery-2-columns .gallery-item { width: giw(2) ;}
+  .gallery-3-columns .gallery-item { width: 342.33px ;}
+  .gallery-4-columns .gallery-item { width: giw(4) ;}
+
+
+  /* dsIDX Styles */
+  #dsidx-listings{
+    .dsidx-primary-data{
+      width: 70%;
+    }
+    .dsidx-secondary-data div{
+      width: 28%;
+    }
+  }
+
+/*-----------------------------------------------------------------------------------*/
+/*	Similar Properties on Property Detail Page
+/*-----------------------------------------------------------------------------------*/
+  .detail{
+    .list-container {
+      padding: 10px 24px 24px;
+      h3{
+        margin: 0 0 7px 40px;
+      }
+    }
+    .property-grid .property-item{
+      margin-left: 40px;
+    }
+  }
+
+
+/*-----------------------------------------------------------------------------------*/
+  /*	Submit Property Template
+  /*-----------------------------------------------------------------------------------*/
+  .submit-form{
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    textarea{
+      width: 534px;
+    }
+    .selectwrap input[type="text"]{
+      width: 510px;
+    }
+    .form-options-container{
+      margin-left: -28px;
+      .form-option{
+        width: 260px;
+        margin-left: 28px;
+      }
+      input[type="text"]{
+        width: 246px;
+      }
+      .selectwrap input[type="text"]{
+        width: 222px;
+      }
+      .full{
+        float: none;
+        width: 550px;
+        input[type="text"]{
+          width: 434px;
+        }
+        .selectwrap input[type="text"]{
+          width: 410px;
+        }
+      }
+    }
+    #gallery-thumbs-container{
+      margin-left: -5px;
+    }
+    .sortable-placeholder,
+    .gallery-thumb{
+      width: 133px;
+      height: 133px;
+      margin: 0 0 5px 5px;
+      img{
+        width: 133px;
+        height: 133px;
+      }
+    }
+
+    .inspiry-detail {
+
+      .inspiry-detail-control{
+        width: 4%;
+      }
+
+      .inspiry-detail-title{
+        width: 34%;
+      }
+
+      .inspiry-detail-value{
+        width: 58%;
+      }
+
+    }
+
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	My Properties
+  /*-----------------------------------------------------------------------------------*/
+  .my-property{
+    .cell{
+      padding: 22px;
+      h5{
+        font-size: 16px;
+      }
+    }
+    .property-thumb{
+      width: 120px;
+    }
+    .property-title{
+      width: 270px;
+    }
+    .property-date{
+      width: 250px;
+    }
+    .property-publish-status{
+      width: 80px;
+    }
+    .property-payment{
+      width: 170px;
+    }
+  }
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	property detail slider variation 2
+  /*-----------------------------------------------------------------------------------*/
+  #property-carousel-two{
+    padding: 0 51px;
+  }
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /* Properties sort controls
+  /*-----------------------------------------------------------------------------------*/
+  .search-header{
+    padding: 42px 30px;
+  }
+  #overview .property-item .property-meta{
+    span{
+      margin-left: 15px;
+      padding-right: 15px;
+    }
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /* Property Attachments
+  /*-----------------------------------------------------------------------------------*/
+  #overview .attachments-list li{
+    width: 32%;
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /* DSIDX Search Widget on Homepage
+  /*-----------------------------------------------------------------------------------*/
+  #home-idx-search{
+    .dsidx-search-widget{
+      input[type=text]{
+        width: 150px !important;
+        &.dsidx-improvedsqft,
+        &.dsidx-beds,
+        &.dsidx-baths{
+          width: 125px !important;
+        }
+      }
+    }
+  }
+
+} // End Qurey
+
+

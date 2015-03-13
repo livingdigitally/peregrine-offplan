@@ -1,0 +1,176 @@
+// Add Your SCSS Here
+@import "variables";
+@import "mixins";
+
+$outer_Wrapper_background_color:  #f5f5f5;
+$header_Wrapper_background_color:  #252a2b;  // Background color for Header Wrapper
+$header_text_color: #929a9b;
+$header_link_hover_color: #b0b8b9;
+
+$contact_number_color: #e7eff7;    // Text color for Contact Number in Header
+$contact_number_bg_color: #4dc7ec; // Background Color for Contact Number in Header
+
+$border_color_one:  #343a3b;      // Border Color for Top-Header in Header
+$border_color_two: #dedede;      // Border Color for Main Contents
+
+$label_color: #394041; // Label color for Advance Search
+
+$form_input_color: #7b8283;  // color for input
+
+$main_menu_background_color: #ec894d;
+$main_menu_background_color_2: #dc7d44;
+$main_menu_background_color_3: #d0743d ;
+
+$linkColorHover : #df5400;     // overwrite link hover color;
+
+// Main Nav
+$main_menu_color:  #afb4b5;
+$main_menu_hover_color: $white;
+$main_menu_a_padding: 14px 10px ;
+$main_menu_a_padding_2: 10px 10px 12px;
+$main_menu_ul_width: 220px;
+$main_menu_ul_top: 48px;
+
+//
+// Responsive: Nav for Small Devices
+// --------------------------------------------------
+
+@media  screen and (max-width:979px) and (min-width:220px) {
+
+body{
+  margin: 0;
+  padding:0;
+}
+
+#header-top{
+  margin-bottom: 15px;
+}
+
+#logo{
+ float: none;
+ margin-bottom: 10px;
+}
+
+// Menu and Contact Wrap
+.menu-and-contact-wrap{
+  position: static;
+}
+
+// Contact Number
+.contact-number{
+  float: none;
+  background: none;
+  text-align: center;
+  margin: 0 auto 15px;
+  min-height: 20px;
+  line-height: 18px;
+  &:hover{
+    .fa-phone{
+      background: none;
+    }
+  }
+  .fa-phone {
+    background: none;
+    margin-right: 10px;
+    padding: 0 ;
+  }
+  .outer-strip{
+    display: none;
+  }
+}
+
+// Main Nav
+.main-menu {
+  float: none;
+  margin: 0 0 15px;
+  padding: 10px ;
+  background-color: $border_color_one;
+  ul{
+    display: none;
+  }
+  .responsive-nav {
+    display: block;
+    border: 1px solid $border_color_one;
+    border-radius: 0;
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+// Slide Description
+.desc-wrap{
+  width: 724px;
+}
+
+.slide-description {
+  padding: 20px 16px;
+  top: 165px;
+  width: auto;
+  h3{
+    margin: 0;
+    line-height: 34px;
+  }
+  .know-more,
+  p {
+    display: none;
+  }
+}
+
+// Advance Search
+.advance-search  .search-heading {
+    position: static;
+  }
+
+// Footer
+#footer-bottom{
+  p{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .designed-by{
+    text-align: center;
+  }
+}
+
+.sidebar .widget{
+  background: $white;
+  margin-bottom: 35px;
+  &.icl_languages_selector{
+    background: transparent;
+  }
+}
+
+//
+// Lisitng Grid Layout
+//------------------------------------------------------
+  .lisitng-grid-layout .main {
+    margin: 0 0 35px;
+  }
+
+  .lisitng-grid-layout .title-heading {
+    position: static;
+  }
+
+  .listing-layout .property-by .title-heading {
+    float: none;
+  }
+
+  .property-item .property-meta span{
+    font-size: 12px;
+  }
+
+}//End Qurey
+
+
+@import "custom-responsive-1200px-min";
+
+@import "custom-responsive-768px-979px";
+
+@import "custom-responsive-767px-max";
+
+@import "custom-responsive-499px-max";
+
+@import "custom-responsive-439px-max";
+
+@import "custom-responsive-279px-max";

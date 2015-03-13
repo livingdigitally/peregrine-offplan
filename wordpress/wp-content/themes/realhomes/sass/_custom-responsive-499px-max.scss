@@ -1,0 +1,459 @@
+@media (max-width: 499px) {
+
+/*------------------------------------------------------*/
+/* Remove Slider Navigation for Smaller Screen.
+/*------------------------------------------------------*/
+  .flex-direction-nav{
+    display: none;
+  }
+
+
+/*------------------------------------------------------*/
+/* Page Head
+/*------------------------------------------------------*/
+  .page-head {
+    padding-top: 15px;
+  }
+
+  .container{
+    width: 440px;
+  }
+
+
+// Google Listing Map
+//------------------------------------------------------
+  #listing-map{
+    height: 350px;
+  }
+
+
+// Advance Search
+//------------------------------------------------------
+  .advance-search{
+    .as-form-wrap{
+      width: 378px;
+    }
+  }
+
+
+// Property Items
+//------------------------------------------------------
+  .property-items{
+    .span6{
+      width: 396px;
+    }
+    .property-meta{
+      margin: 0 -10px 0;
+      padding: 0 10px;
+      span{
+        border-right: none ;
+        border-bottom: 1px solid #DEDEDE;
+        margin-right: 0;
+        padding-right:0;
+        width: 100%;
+      }
+    }
+  }
+
+  .property-item {
+     figure{
+      float: none;
+      width: auto ;
+      margin-bottom: 0;
+        img{
+          width: 100%;
+        }
+     }
+    .detail{
+      float: none;
+      width: auto;
+      padding: 0;
+      min-height: inherit;
+    }
+    .price{
+      padding: 10px ;
+      margin: 0 0 10px;
+    }
+  }
+
+
+
+// Carousel
+//------------------------------------------------------
+  $list_item_width:  154px;
+  $list_item_margin: 30px;
+
+  .es-carousel-wrapper {
+    ul{
+      li{
+        width: $list_item_width !important;
+        margin-right: $list_item_margin !important;
+      }
+    }
+  }
+
+// 438 - (178 * 2 )356 = 82 / 2 = 41px
+  $list_item_width:  180px;
+
+  .brands-carousel {
+    .jcarousel-container-horizontal{
+      padding-left: 41px;
+      padding-right: 41px;
+    }
+    ul.brands-carousel-list{
+      li{
+        width: $list_item_width;
+      }
+    }
+  }
+
+
+
+  .sidebar .widget {
+    margin-left: auto;
+    margin-right: auto;
+    width: 440px;
+  }
+
+
+// Search Widget
+//------------------------------------------------------
+  .widget{
+    #searchform{
+      width: 398px;
+    }
+    #s{
+      width: 360px;
+    }
+  }
+
+
+
+// Advance Search Widget
+//------------------------------------------------------
+  .widget.calculator ,
+  .widget.advance-search{
+
+  }
+
+
+
+// Calculator Widget
+// ------------------------------------------------------
+  .widget.calculator {
+    input[type="text"] {
+      width: 386px;
+    }
+    .mini .selectwrap input,
+    .mini input,
+    #extra{
+      /*width: 360px;*/
+    }
+    #payment{
+      width: 382px;
+    }
+  }
+
+
+// Featured Properties Widget
+//------------------------------------------------------
+  ul.featured-properties {
+    li {
+      width: 180px;
+      margin-left: 27px;
+    }
+  }
+
+
+// Agent Listing Detail Page
+//------------------------------------------------------*/
+  .listing-layout{
+    .about-agent{
+      .detail{
+        width: 52.9%;
+      }
+    }
+    .follow-agent {
+      margin-top: 10px;
+    }
+    .property-item{
+      figure {
+        margin: 0;
+      }
+      .detail {
+        width: auto;
+      }
+      .price {
+        margin: 0 0 10px;
+      }
+      .property-meta{
+        margin: 0 -10px 0;
+        padding: 0 10px;
+        span{
+          border-right: none ;
+          border-bottom: 1px solid #DEDEDE;
+          margin-right: 0;
+          padding-right:0;
+          width: 100%;
+          &:last-of-type{
+            border-bottom: none
+          }
+        }
+      }
+    }
+  }
+
+
+
+// Property Grid View Page
+//--------------------------------------------------------
+  .property-grid{
+    .property-item{
+      width: 187px;
+      figure {
+        width: 187px;
+      }
+    }
+  }
+
+
+
+// Blog Page
+//--------------------------------------------------------
+  .format-icon{
+    display: none;
+  }
+
+  .listing-slider .flex-direction-nav a {
+    height: 42px;
+    width: 25px;
+  }
+
+// Comments
+//------------------------------------------------------
+  #comments .comment .avatar{
+    margin: 10px 10px 10px 0;
+    width: 80px;
+    height: 80px;
+    float: none;
+  }
+
+  .comment-detail-wrap,
+  #comments .commentlist .children .comment-detail-wrap,
+  #comments .commentlist .children .depth-2 .comment-detail-wrap,
+  #comments .commentlist .children .depth-3 .comment-detail-wrap,
+  #comments .commentlist .children .depth-4 .comment-detail-wrap,
+  #comments .commentlist .children .depth-5 .comment-detail-wrap{
+    border: none;
+    padding: 0;
+    width: 100%;
+    .comment-detail-wrap-arrow{
+        display: none
+    }
+  }
+
+
+
+// Contact Page
+//------------------------------------------------------
+
+  #contact-form input[type="text"], #contact-form #comment {
+    width: 97%;
+  }
+
+  #map_canvas {
+    height: 250px;
+  }
+
+
+  $gi_margin : 0px;
+  $c_padding : 62px;
+  $c_width   : 440px;
+
+  @function giw($items)
+  {
+    $wid   : $c_width - $c_padding ;
+    $ism   : $gi_margin * ( $items - 1 );
+    $isw   : ( $wid - $ism )  / $items;
+    @return  $isw;
+  }
+
+  .gallery-2-columns,
+  .gallery-3-columns,
+  .gallery-4-columns{ margin-left: -$gi_margin; }
+  .gallery-2-columns .gallery-item,
+  .gallery-3-columns .gallery-item,
+  .gallery-4-columns .gallery-item{ margin-left: $gi_margin;}
+
+  .gallery-2-columns .gallery-item { width: giw(1) ;}
+  .gallery-3-columns .gallery-item { width: giw(1) ;}
+  .gallery-4-columns .gallery-item { width: giw(1) ;}
+
+
+
+// Detail Page
+//------------------------------------------------------
+  #property-detail-flexslider {
+    height: 219px;
+    .flex-viewport{
+      height: 219px;
+      width: 374px;
+    }
+    .flex-control-thumbs{
+      li{
+        margin-bottom: 5px;
+        height: 31px;
+      }
+    }
+    .jcarousel-clip-vertical{
+      height: 180px;
+    }
+    .jcarousel-container-vertical {
+      width: 50px;
+    }
+    .jcarousel-next,
+    .jcarousel-prev{
+      margin: 2px 0 1px;
+    }
+  }
+
+
+
+  #overview{
+    .contacts-list{
+      width: 99.5%;
+    }
+    .contact-form{
+      textarea,
+      input[type="text"]{
+        width: 94.4%;
+      }
+    }
+  }
+
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	dsIDX Styles
+  /*-----------------------------------------------------------------------------------*/
+  #dsidx-listings{
+    .dsidx-secondary-data div{
+      width: auto;
+      float: none;
+    }
+    .dsidx-address{
+      display: block;
+    }
+    .dsidx-price{
+      float: none;
+      padding-left: 10px;
+    }
+  }
+
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	Making reCAPTCHA Responsive
+  /*-----------------------------------------------------------------------------------*/
+  #recaptcha_area{
+    .recaptchatable #recaptcha_image {
+      margin: 0 !important;
+      width: 230px !important;
+    }
+    .recaptchatable a{
+      color: $linkColor;
+      &:hover{
+        color: $linkColorHover;
+      }
+    }
+    .recaptchatable .recaptcha_r1_c1,
+    .recaptchatable .recaptcha_r2_c2,
+    .recaptchatable .recaptcha_r3_c1,
+    .recaptchatable .recaptcha_r3_c2,
+    .recaptchatable .recaptcha_r7_c1,
+    .recaptchatable .recaptcha_r8_c1,
+    .recaptchatable .recaptcha_r3_c3,
+    .recaptchatable .recaptcha_r2_c1,
+    .recaptchatable .recaptcha_r4_c1,
+    .recaptchatable .recaptcha_r4_c2,
+    .recaptchatable .recaptcha_r4_c4,
+    .recaptchatable .recaptcha_image_cell {
+      background: none !important;
+    }
+  }
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	Similar Properties on Property Detail Page
+  /*-----------------------------------------------------------------------------------*/
+  .detail{
+    .list-container {
+      padding: 10px 20px;
+      h3{
+        margin: 0 0 5px 20px;
+      }
+    }
+    .property-grid .property-item{
+      margin-left: 20px;
+      width: 187px;
+      min-height: 330px;
+    }
+  }
+
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	Submit Property Template
+  /*-----------------------------------------------------------------------------------*/
+  .submit-form{
+    .selectwrap input[type="text"]{
+      width: 90%;
+    }
+    .form-options-container{
+      .selectwrap input[type="text"]{
+        width: 90%;
+      }
+      .full{
+        .selectwrap input[type="text"]{
+          width: 90%;
+        }
+      }
+    }
+    #gallery-thumbs-container{
+      margin-left: -5px;
+    }
+    .sortable-placeholder,
+    .gallery-thumb{
+      width: 128px;
+      height: 128px;
+      margin: 0 0 5px 5px;
+      img{
+        width: 128px;
+        height: 128px;
+      }
+    }
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	Login & Register
+  /*-----------------------------------------------------------------------------------*/
+  .login-register{
+    input[type="text"],
+    input[type="password"]{
+      width: 95%;
+    }
+  }
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	property detail slider variation 2
+  /*-----------------------------------------------------------------------------------*/
+  #property-slider-two {
+    min-height: 200px;
+  }
+  #property-carousel-two{
+    padding: 0 20px;
+    .flex-direction-nav{
+      display: block;
+    }
+  }
+
+}
